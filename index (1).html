@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatAI - Intelligent India Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="login-page">
+        <div class="login-container">
+            <div class="login-header">
+                <h1 class="bharatai-logo">🇮🇳 BharatAI</h1>
+                <p>Your Intelligent India Platform</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" class="form-control" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full-width">Login to BharatAI</button>
+                <div class="demo-credentials">
+                    <small>Demo: username: <strong>demo</strong> | password: <strong>bharatai123</strong></small>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="dashboard hidden">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <h1 class="bharatai-logo">🇮🇳 BharatAI</h1>
+                <div class="header-actions">
+                    <span class="welcome-text">Welcome to BharatAI</span>
+                    <button id="logoutBtn" class="btn btn--outline btn--sm">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="news">📰 News</button>
+            <button class="tab-btn" data-tab="education">📚 Education</button>
+            <button class="tab-btn" data-tab="finance">💰 Finance</button>
+            <button class="tab-btn" data-tab="sports">🏏 Sports</button>
+            <button class="tab-btn" data-tab="astrology">⭐ Astrology</button>
+            <button class="tab-btn" data-tab="science">🔬 Science</button>
+            <button class="tab-btn" data-tab="business">💼 Business</button>
+            <button class="tab-btn" data-tab="history">🏛️ History</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <main class="dashboard-content">
+            <!-- News Tab -->
+            <div id="news" class="tab-content active">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Latest News from India</h3>
+                        <div class="news-items">
+                            <div class="news-item">
+                                <h4>Technology Advancement in Indian Cities</h4>
+                                <p>Major cities across India are embracing digital transformation with new smart city initiatives.</p>
+                                <span class="status status--info">Technology</span>
+                            </div>
+                            <div class="news-item">
+                                <h4>Economic Growth Continues Strong</h4>
+                                <p>India's economy shows robust growth in the latest quarterly reports.</p>
+                                <span class="status status--success">Economy</span>
+                            </div>
+                            <div class="news-item">
+                                <h4>Cultural Festival Celebrations</h4>
+                                <p>Diverse cultural festivals celebrated across different states showcase India's rich heritage.</p>
+                                <span class="status status--warning">Culture</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Tab -->
+            <div id="education" class="tab-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Education in India</h3>
+                        <div class="education-content">
+                            <div class="education-section">
+                                <h4>Digital Learning Initiatives</h4>
+                                <p>Government launches new online education platforms to reach rural areas.</p>
+                            </div>
+                            <div class="education-section">
+                                <h4>Higher Education Reforms</h4>
+                                <p>Universities implementing new curriculum to meet industry demands.</p>
+                            </div>
+                            <div class="education-section">
+                                <h4>Skill Development Programs</h4>
+                                <p>Vocational training programs expanding across all states.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Finance Tab -->
+            <div id="finance" class="tab-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Financial Markets</h3>
+                        <div class="finance-content">
+                            <div class="market-stats">
+                                <div class="stat-item">
+                                    <h4>Sensex</h4>
+                                    <p class="stat-value">84,245.62</p>
+                                    <span class="status status--success">+0.85%</span>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>Nifty 50</h4>
+                                    <p class="stat-value">25,790.95</p>
+                                    <span class="status status--success">+0.92%</span>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>USD/INR</h4>
+                                    <p class="stat-value">83.45</p>
+                                    <span class="status status--warning">+0.12%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sports Tab -->
+            <div id="sports" class="tab-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Sports in India</h3>
+                        <div class="sports-content">
+                            <div class="sport-item">
+                                <h4>Cricket Updates</h4>
+                                <p>Indian cricket team prepares for upcoming international series.</p>
+                            </div>
+                            <div class="sport-item">
+                                <h4>Olympic Preparations</h4>
+                                <p>Athletes training for upcoming Olympic games with government support.</p>
+                            </div>
+                            <div class="sport-item">
+                                <h4>Traditional Sports Revival</h4>
+                                <p>Kabaddi and Kho-Kho gaining popularity in schools nationwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Astrology Tab -->
+            <div id="astrology" class="tab-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Vedic Astrology</h3>
+                        <div class="astrology-content">
+                            <div class="astro-section">
+                                <h4>Today's Planetary Positions</h4>
+                                <p>Favorable planetary alignments suggest prosperity and growth.</p>
+                            </div>
+                            <div class="astro-section">
+                                <h4>Festival Calendar</h4>
+                                <p>Upcoming auspicious dates for important ceremonies and celebrations.</p>
+                            </div>
+                            <div class="astro-section">
+                                <h4>Zodiac Insights</h4>
+                                <p>Ancient wisdom guides modern decisions through celestial knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Tab -->
+            <div id="science" class="tab-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Scientific Achievements</h3>
+                        <div class="science-content">
+                            <div class="science-item">
+                                <h4>Space Exploration</h4>
+                                <p>ISRO continues successful missions with cost-effective innovations.</p>
+                            </div>
+                            <div class="science-item">
+                                <h4>Medical Research</h4>
+                                <p>Indian scientists make breakthrough discoveries in healthcare.</p>
+                            </div>
+                            <div class="science-item">
+                                <h4>Technology Innovation</h4>
+                                <p>IT sector leads global innovation with cutting-edge solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Tab -->
+            <div id="business" class="tab-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Business & Economy</h3>
+                        <div class="business-content">
+                            <div class="business-item">
+                                <h4>Startup Ecosystem</h4>
+                                <p>India becomes the third-largest startup ecosystem globally.</p>
+                            </div>
+                            <div class="business-item">
+                                <h4>Manufacturing Growth</h4>
+                                <p>Make in India initiative attracts international investments.</p>
+                            </div>
+                            <div class="business-item">
+                                <h4>Digital Payments</h4>
+                                <p>UPI transactions reach new milestones in digital adoption.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Tab -->
+            <div id="history" class="tab-content">
+                <div class="card">
+                    <div class="card__body">
+                        <h3>Indian Heritage</h3>
+                        <div class="history-content">
+                            <div class="history-item">
+                                <h4>Ancient Civilizations</h4>
+                                <p>Indus Valley Civilization showcases advanced urban planning and culture.</p>
+                            </div>
+                            <div class="history-item">
+                                <h4>Freedom Movement</h4>
+                                <p>Heroes of independence inspire generations with their sacrifices.</p>
+                            </div>
+                            <div class="history-item">
+                                <h4>Cultural Heritage</h4>
+                                <p>Architectural marvels and artistic traditions preserved through centuries.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Chatbot Button -->
+        <button id="chatbotToggle" class="chatbot-toggle">💬</button>
+
+        <!-- Chatbot -->
+        <div id="chatbot" class="chatbot hidden">
+            <div class="chatbot-header">
+                <h3>BharatAI Assistant</h3>
+                <button id="closeChatbot" class="close-btn">&times;</button>
+            </div>
+            <div id="chatMessages" class="chat-messages">
+                <div class="chat-message bot-message">
+                    <p>Namaste! I'm your BharatAI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" class="chat-input" placeholder="Type your message...">
+                <button id="sendMessage" class="btn btn--primary btn--sm">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
